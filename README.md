@@ -2,4 +2,4 @@
 This is a Midterm project for ML Zoomcamp 2022 (TODO: apply everything we learned)
 
 ## Dataset
-This project based on (https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams?resource=download)
+This project based on [Students Perfomans in Exams](https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams?resource=download)
