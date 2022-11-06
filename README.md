@@ -31,3 +31,11 @@ You can change a features for test student and test for your student. I print a 
 performance in terminal.
 You see something as this:
 <img src ="images/predict_test.png" />
+
+### Containerization
+1. Install the Docker, and it's running on your machine now.
+1. Open the terminal and choose the project directory.
+2. Build docker image from Dockerfile using 'docker build -t predict-stud-perf:latest'.
+With `-t` parameter we're specifying the tag name of our docker image. 
+3. Now use `docker run  predict-stud-perf:latest` command to launch the docker container with your app. 
+You can use the ID image instead of predict-stud-perf:latest. You can find ID image with command 'docker images'.
