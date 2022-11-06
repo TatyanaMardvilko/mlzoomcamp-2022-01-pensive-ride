@@ -30,4 +30,5 @@ performance for this student.
 You can change a features for test student and test for your student. I print a predicted 
 performance in terminal.
 You see something as this:
+<img src ="https://github.com/TatyanaMardvilko/mlzoomcamp-2022-01-pensive-ride/tree/main/images/predict_test.png" />
 ![alt test_service](https://github.com/TatyanaMardvilko/mlzoomcamp-2022-01-pensive-ride/tree/main/images/predict_test.png)
