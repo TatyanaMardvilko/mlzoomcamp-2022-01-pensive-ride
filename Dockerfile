@@ -1,16 +1,18 @@
-FROM python:3.8.12-slim
+FROM python:3.9-slim
 
 RUN pip install pipenv
 
-WORKDIR /usr/app
+WORKDIR /app
 
 COPY ["Pipfile", "Pipfile.lock", "./"]
 
+RUN pipenv lock
 RUN pipenv install --system --deploy
 
-COPY ["src/predict.py",  "./src/predict.py"]
+COPY ["predict.py",  "./"]
 COPY ["models/RandomForestModel.bin", "./models/RandomForestModel.bin"]
 
-EXPOSE 9696
+EXPOSE 8080
 
-ENTRYPOINT ["python", "src/predict.py"]
+ENTRYPOINT ["waitress-serve"]
+CMD ["--port=8080", "predict:app"]

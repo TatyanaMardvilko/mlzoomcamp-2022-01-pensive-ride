@@ -1,6 +1,6 @@
 import requests
 
-url = "http://localhost:8080/predict"
+url = "http://localhost:9696/predict"
 
 student = {
     "gender": "female",
